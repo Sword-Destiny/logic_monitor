@@ -35,7 +35,7 @@ namespace lm {
 		input **g; //输入g[0-63]
 		output *Cout;//输出Cout，向高位进位
 
-		void println();
+		void print();
 
 	private:
 		carry4 **c4; //第一层16个4位并行进位逻辑

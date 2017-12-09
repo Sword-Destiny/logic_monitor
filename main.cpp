@@ -123,9 +123,9 @@ void test_carry_64(int seed) {
 	c64->setC(c);
 	printf("%64s %64s c40G c40P c40c1 c40c2 c40c3 c0 P64 G64 cout %64s\n", "p", "g", "c");
 	for (int i = 0; i < 100; i++) {
-
 		doc.update_document();
 		c64->println();
+        cout << endl;
 	}
 
 

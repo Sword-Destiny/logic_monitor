@@ -215,7 +215,7 @@ logic_monitor::carry64::carry64(const string &name, logic_monitor::input *c0, lo
 	dc = new nand("dc", lp4_15c0, lng4_15);
 }
 
-void logic_monitor::carry64::println() {
+void logic_monitor::carry64::print() {
 	for (int i = 63; i >= 0; i--) {
 		cout << p[i]->get_signal();
 	}
@@ -236,6 +236,5 @@ void logic_monitor::carry64::println() {
 	for (int i = 63; i >= 0; i--) {
 		cout << c[i]->get_signal();
 	}
-	cout << endl;
 }
 
