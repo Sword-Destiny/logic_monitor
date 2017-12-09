@@ -16,27 +16,23 @@
 8. 调用logic\_document的update\_document函数,每调用一次,时钟就会经过一个延迟,逻辑器件会经过一级门延迟,端口会更新一次
 9. 调用逻辑器件,端口或者时钟的get\_signal函数获取当前的信号\(carry64和adder64有我自定义的print函数\)\
 ***
-`void test_full_adder() {
+```
+void test_full_adder() {
 	logic_document doc("doc");
 	auto *cycle_a = new bool[8]{true, true, true, true, false, false, false, false};
 	auto *cycle_b = new bool[8]{true, true, false, false, true, true, false, false};
 	auto *cycle_c = new bool[8]{true, false, true, false, true, false, true, false};
-
 	periodic_clock ca(3, false, true, cycle_a, 8, 2, 5, false, "ca");
 	periodic_clock cb(3, false, true, cycle_b, 8, 2, 5, false, "cb");
 	periodic_clock cc(3, false, true, cycle_c, 8, 2, 5, false, "cc");
 	clock_iface a("a", &ca);
 	clock_iface b("b", &cb);
 	clock_iface c("a", &cc);
-
 	fadd f("f", &a, &b, &c);
-
 	output co("co", &f);
 	output s("s", &f);
-
 	f.setCo(&co);
 	f.setS(&s);
-
 	doc.clocks.push_back(&ca);
 	doc.clocks.push_back(&cb);
 	doc.clocks.push_back(&cc);
@@ -52,9 +48,9 @@
 		cout << a.get_signal() << " " << b.get_signal() << " " << c.get_signal() << "  " << s.get_signal() << " "
 			 << co.get_signal() << endl;
 	}
-
 	delete[] cycle_a, cycle_b, cycle_c;
-}`
+}
+```
 ***
 ##注意事项
 ***
