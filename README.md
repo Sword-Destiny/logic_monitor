@@ -3,7 +3,7 @@
 逻辑电路模拟
 这是一个用于模拟逻辑电路信号的程序
 ***
-## 使用方法
+### 使用方法
 ***
 参照main.cpp的test\_not/test\_nand2/test\_full\_adder/test\_carry4函数
 1. 定义一个logic\_document
@@ -52,7 +52,7 @@ void test_full_adder() {
 }
 ```
 ***
-## 注意事项
+### 注意事项
 ***
 上述顺序不一定要完全遵守,但是谨记
 1. input\_iface是虚类,应该使用其子类clock\_iface或者link\_iface
@@ -60,7 +60,7 @@ void test_full_adder() {
 3. 即使一个器件的某个输出端口未被使用,也要定义输出端口并且设置,不然的话在update的时候会出错
 4. 器件可以复用,将两个器件连接起来的方式是: 器件一\->output端口\->link端口\->器件二 (link\_iface继承自input\_iface所以可以当作输入端口使用)
 ***
-## 使用现成的逻辑器件构成新的逻辑器件的方式
+### 使用现成的逻辑器件构成新的逻辑器件的方式
 ***
 我们以二输入与门(and2)为例<br>
 计算机是反逻辑,与门使用的是与非门和非门连接 o = ~ \(~\(a&b\)\)
@@ -90,16 +90,7 @@ namespace lm {
     void update_signal() override;
     and_device(const string &name, input *a, input *b);
 ```
-4. 构造函数的实现
-```
-    logic_monitor::and_device::and_device(const string &name, logic_monitor::input *a, logic_monitor::input *b)
-    		: logic_device(name), a(a), b(b), dnand("dnand", a, b), onand("onand", &dnand), lnand("lnand", &onand),
-    		  dn("dn", &lnand)
-    {
-	    dnand.setO(&onand);
-    }
-```
-与非门dnand将a和b作为输入,输出端口为onand,然后是lnand,最后是dn将lnand作为自己的输入,
+4. 构造函数的实现,与非门dnand将a和b作为输入,输出端口为onand,然后是lnand,最后是dn将lnand作为自己的输入,
 别忘了dnand将onand作为自己的输出端口是需要调用setter函数的,
 由于c++类成员变量的初始化顺序是按照头文件定义顺序而不是构造函数头写的顺序,所以定义顺序一定不能错,
 为了避免由于定义顺序导致初始化顺序出错,建议成员变量使用指针的形式,这里没有使用指针是因为比较简单,具体可以参考carry64和adder64的实现,
@@ -108,13 +99,20 @@ namespace lm {
 而dnand,onand,lnand,dn则是自己内部的结构,如果使用指针,则需要由本类管理释放,
 使用指针的好处就是不用在构造函数头部写的那么臃肿,也不用担心c++成员变量的默认初始化顺序问题,
 这里非门dn的输出端口没有设置,因为当这个逻辑器件初始化的时候,还不知道整体的输出端口是什么,所以要放到setter函数里面
-5. update\_signal函数的实现
-    先update所有的逻辑器件,然后update所有的link_iface端口
-	```
-    dnand.update_signal();
+```
+    logic_monitor::and_device::and_device(const string &name, logic_monitor::input *a, logic_monitor::input *b)
+    		: logic_device(name), a(a), b(b), dnand("dnand", a, b), onand("onand", &dnand), lnand("lnand", &onand),
+    		  dn("dn", &lnand)
+    {
+	    dnand.setO(&onand);
+    }
+```
+5. update\_signal函数的实现:先update所有的逻辑器件,然后update所有的link_iface端口
+```
+	dnand.update_signal();
 	dn.update_signal();
 	lnand.update_signal();
-	```
+```
 6. get\_signal的实现
 ```
 	if (out_iface == o) {
@@ -122,9 +120,7 @@ namespace lm {
 	}
 	return false;
 ```
-7. setter函数
-    setter函数除了设置自己的成员变量之外,别忘了设置相关的内部器件的成员变量
-    比如setO函数,除了自己的output设置成o之外,dn这个非门的输出端口也是o
+7. setter函数:setter函数除了设置自己的成员变量之外,别忘了设置相关的内部器件的成员变量,如setO函数,除了自己的output设置成o之外,dn这个非门的输出端口也是o
 ```
 	and_device::o = o;
 	dn.setOutput(o);
