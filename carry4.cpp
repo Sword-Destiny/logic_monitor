@@ -204,14 +204,14 @@ void carry4::update_signal() {
 }
 
 carry4::~carry4() {
-	delete ng0, ng1, ng2, ng3;
-	delete lng0, lng1, lng2, lng3;
-	delete p0c0, p1g0, p2g1, p3g2;
-	delete lp0c0, lp1g0, lp2g1, lp3g2;
-	delete p1p0c0, p2p1g0, p3p2g1;
-	delete lp1p0c0, lp2p1g0, lp3p2g1;
-	delete p2p1p0c0, p3p2p1g0;
-	delete lp2p1p0c0, lp3p2p1g0;
+	delete ng0;delete ng1;delete ng2;delete ng3;
+	delete lng0;delete lng1;delete lng2;delete lng3;
+	delete p0c0;delete p1g0;delete p2g1;delete p3g2;
+	delete lp0c0;delete lp1g0;delete lp2g1;delete lp3g2;
+	delete p1p0c0;delete p2p1g0;delete p3p2g1;
+	delete lp1p0c0;delete lp2p1g0;delete lp3p2g1;
+	delete p2p1p0c0;delete p3p2p1g0;
+	delete lp2p1p0c0;delete lp3p2p1g0;
 	delete p3p2p1p0;
 	delete lp3p2p1p0;
 };

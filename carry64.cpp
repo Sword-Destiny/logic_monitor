@@ -23,8 +23,8 @@ logic_monitor::carry64::~carry64() {
 	}
 	delete[] lc16;
 	delete[] lc64;
-	delete[] c4, p4, g4;
-	delete[] p16, g16, c16;
+	delete[] c4;delete[] p4;delete[] g4;
+	delete[] p16;delete[] g16;delete[] c16;
 	delete c64;
 	delete dp4_15c0;
 	delete p4_15c0;

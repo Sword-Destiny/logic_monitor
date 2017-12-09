@@ -71,9 +71,13 @@ void test_adder_64(int seed) {
 
 
 	for (int i = 0; i < 64; i++) {
-		delete p[i], g[i], s[i];
+		delete p[i];
+        delete g[i];
+        delete s[i];
 	}
-	delete[] p, g, s;
+	delete[] p;
+    delete[] g;
+    delete[] s;
 	delete a64;
 }
 
@@ -124,15 +128,19 @@ void test_carry_64(int seed) {
 	printf("%64s %64s c40G c40P c40c1 c40c2 c40c3 c0 P64 G64 cout %64s\n", "p", "g", "c");
 	for (int i = 0; i < 100; i++) {
 		doc.update_document();
-		c64->println();
+		c64->print();
         cout << endl;
 	}
 
 
 	for (int i = 0; i < 64; i++) {
-		delete p[i], g[i], c[i];
+		delete p[i];
+        delete g[i];
+        delete c[i];
 	}
-	delete[] p, g, c;
+	delete[] p;
+    delete[] g;
+    delete[] c;
 	delete c64;
 }
 
@@ -173,7 +181,9 @@ void test_full_adder() {
 			 << co.get_signal() << endl;
 	}
 
-	delete[] cycle_a, cycle_b, cycle_c;
+	delete[] cycle_a;
+    delete[] cycle_b;
+    delete[] cycle_c;
 }
 
 void test_carry4() {
@@ -266,7 +276,8 @@ void test_nand2() {
 			 << o.get_signal() << endl;
 	}
 
-	delete[] cycle_a, cycle_b;
+	delete[] cycle_a;
+    delete[] cycle_b;
 }
 
 void test_not() {

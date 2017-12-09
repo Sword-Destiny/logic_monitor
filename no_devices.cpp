@@ -27,7 +27,7 @@ logic_monitor::input *logic_monitor::no_device::getInput() const {
 }
 
 void logic_monitor::no_device::setInput(logic_monitor::input *input) {
-	this->i = i;
+	this->i = input;
 }
 
 logic_monitor::output *logic_monitor::no_device::getOutput() const {

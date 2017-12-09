@@ -6,12 +6,26 @@
 using namespace lm;
 
 full_adder::~full_adder() {
-	delete na, nb, nc;
-	delete nanbc, nabnc, anbnc, abc;
-	delete ab, ac, bc;
-	delete lna, lnb, lnc;
-	delete lnanbc, lnabnc, lanbnc, labc;
-	delete lab, lac, lbc;
+	delete na;
+    delete nb;
+    delete nc;
+	delete nanbc;
+    delete nabnc;
+    delete anbnc;
+    delete abc;
+	delete ab;
+    delete ac;
+    delete bc;
+	delete lna;
+    delete lnb;
+    delete lnc;
+	delete lnanbc;
+    delete lnabnc;
+    delete lanbnc;
+    delete labc;
+	delete lab;
+    delete lac;
+    delete lbc;
 }
 
 input *full_adder::getA() const {
