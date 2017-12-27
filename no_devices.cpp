@@ -22,18 +22,19 @@ void logic_monitor::no_device::update_signal() {
 	o->update_signal(i->get_signal());
 }
 
-logic_monitor::input *logic_monitor::no_device::getInput() const {
+logic_monitor::input *logic_monitor::no_device::getI() const {
 	return i;
 }
 
-void logic_monitor::no_device::setInput(logic_monitor::input *input) {
-	this->i = input;
+void logic_monitor::no_device::setI(logic_monitor::input *i) {
+	no_device::i = i;
 }
 
-logic_monitor::output *logic_monitor::no_device::getOutput() const {
+logic_monitor::output *logic_monitor::no_device::getO() const {
 	return o;
 }
 
-void logic_monitor::no_device::setOutput(logic_monitor::output *o) {
-	this->o = o;
+void logic_monitor::no_device::setO(logic_monitor::output *o) {
+	no_device::o = o;
 }
+

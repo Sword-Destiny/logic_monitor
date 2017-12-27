@@ -39,7 +39,7 @@ namespace lm {
 		signal sgl;//信号
 		logic_time start_time;//初始信号持续时间
 		signal init_signal;//初始信号
-		signal final_signal;//最终信号
+		signal final_signal;//最终信号.
 		signal *cycle_signal;//循环信号
 		int cycle_signal_len;//循环信号数组长度
 		int cycle_num;//信号循环次数

@@ -16,11 +16,12 @@ using namespace std;
 
 #define lm logic_monitor
 
+#define SIGNAL_ZERO false
+#define SIGNAL_ONE  true
+
 namespace lm {
 
 	typedef bool signal;
-#define SIGNAL_ZERO false
-#define SIGNAL_ONE  true
 
 	/**
 	 * 端口类型

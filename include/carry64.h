@@ -20,7 +20,7 @@ namespace lm {
 		static const int N_LC64 = 3;
 		static const int N_LC16 = 12;
 	public:
-		~carry64();
+		~carry64()override ;
 
 		carry64(const string &name, input *c0, input **p, input **g);
 

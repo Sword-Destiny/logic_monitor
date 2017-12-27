@@ -20,7 +20,7 @@ namespace lm {
 	public:
 		adder64(const string &name, input *c0, input **a, input **b);
 
-		~adder64();
+		~adder64() override ;
 
 		signal get_signal(output *out_iface) override;
 
@@ -43,7 +43,7 @@ namespace lm {
 		output *op[BITS];
 		link *lg[BITS];
 		link *lp[BITS];
-		output *oc[BITS];//c[i]代表第i位是否进位，这是64位进位逻辑的输出
+		output *oc[BITS];//c[i]代表第i位是否进位，这是64位进位逻辑的输出.
 		link *lc[BITS];
 		full_adder *adder[BITS];//最后得到s要使用64个全加器
 		output *P;

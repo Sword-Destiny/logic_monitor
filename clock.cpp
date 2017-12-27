@@ -3,6 +3,7 @@
 //
 
 #include "include/clock.h"
+
 using namespace lm;
 
 lm::periodic_clock::periodic_clock(logic_time start_time, signal init_signal, signal final_signal,

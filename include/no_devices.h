@@ -24,13 +24,13 @@ namespace lm {
 
 		void update_signal() override;
 
-		input *getInput() const;
+		input *getI() const;
 
-		void setInput(input *input);
+		void setI(input *i);
 
-		output *getOutput() const;
+		output *getO() const;
 
-		void setOutput(output *o);
+		void setO(output *o);
 
 	private:
 		input *i;

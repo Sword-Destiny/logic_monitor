@@ -1,6 +1,46 @@
 cmake_minimum_required(VERSION 3.5)
-project(LogicMonitor)
+project(logic_monitor)
 
 set(CMAKE_CXX_STANDARD 11)
+include_directories(include)
 
-add_executable(LogicMonitor main.cpp common.cpp document.cpp include/document.h iface.cpp include/iface.h logic_device.cpp include/logic_device.h include/common.h clock.cpp include/clock.h not_device.cpp include/not_device.h carry4.cpp include/carry4.h and_not_device.cpp include/and_not_device.h and_not_device3.cpp include/and_not_device3.h and_not_device4.cpp include/and_not_device4.h or_not_device.cpp include/or_not_device.h or_not_device3.cpp include/or_not_device3.h or_not_device4.cpp include/or_not_device4.h full_adder.cpp include/full_adder.h carry64.cpp include/carry64.h no_devices.cpp include/no_devices.h adder64.cpp include/adder64.h and_device.cpp include/and_device.h or_device.cpp include/or_device.h)
+add_executable(logic_monitor
+    include/adder64.h
+    include/and_device.h
+    include/and_not_device.h
+    include/and_not_device3.h
+    include/and_not_device4.h
+    include/carry4.h
+    include/carry64.h
+    include/clock.h
+    include/common.h
+    include/document.h
+    include/full_adder.h
+    include/iface.h
+    include/logic_device.h
+    include/no_devices.h
+    include/not_device.h
+    include/or_device.h
+    include/or_not_device.h
+    include/or_not_device3.h
+    include/or_not_device4.h
+    adder64.cpp
+    and_device.cpp
+    and_not_device.cpp
+    and_not_device3.cpp
+    and_not_device4.cpp
+    carry4.cpp
+    carry64.cpp
+    clock.cpp
+    common.cpp
+    document.cpp
+    full_adder.cpp
+    iface.cpp
+    logic_device.cpp
+    main.cpp
+    no_devices.cpp
+    not_device.cpp
+    or_device.cpp
+    or_not_device.cpp
+    or_not_device3.cpp
+    or_not_device4.cpp)
