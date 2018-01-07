@@ -24,23 +24,23 @@ add_executable(logic_monitor
     include/or_not_device.h
     include/or_not_device3.h
     include/or_not_device4.h
-    adder64.cpp
-    and_device.cpp
-    and_not_device.cpp
-    and_not_device3.cpp
-    and_not_device4.cpp
-    carry4.cpp
-    carry64.cpp
-    clock.cpp
-    common.cpp
-    document.cpp
-    full_adder.cpp
-    iface.cpp
-    logic_device.cpp
+        src/adder64.cpp
+        src/and_device.cpp
+        src/and_not_device.cpp
+        src/and_not_device3.cpp
+        src/and_not_device4.cpp
+        src/carry4.cpp
+        src/carry64.cpp
+        src/clock.cpp
+        src/common.cpp
+        src/document.cpp
+        src/full_adder.cpp
+        src/iface.cpp
+        src/logic_device.cpp
     main.cpp
-    no_devices.cpp
-    not_device.cpp
-    or_device.cpp
-    or_not_device.cpp
-    or_not_device3.cpp
-    or_not_device4.cpp)
+        src/no_devices.cpp
+        src/not_device.cpp
+        src/or_device.cpp
+        src/or_not_device.cpp
+        src/or_not_device3.cpp
+        src/or_not_device4.cpp)
