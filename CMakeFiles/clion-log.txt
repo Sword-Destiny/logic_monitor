@@ -1,4 +1,0 @@
-/opt/cmake-3.10.0-Linux-x86_64/bin/cmake -DCMAKE_BUILD_TYPE= -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -G "CodeBlocks - Unix Makefiles" /home/sworddestiny/windows-dev/ShareWithUbuntu/clion/LogicMonitor
--- Configuring done
--- Generating done
--- Build files have been written to: /home/sworddestiny/windows-dev/ShareWithUbuntu/clion/LogicMonitor

@@ -1,3 +1,0 @@
-/home/sworddestiny/windows-dev/ShareWithUbuntu/clion/LogicMonitor/CMakeFiles/rebuild_cache.dir
-/home/sworddestiny/windows-dev/ShareWithUbuntu/clion/LogicMonitor/CMakeFiles/edit_cache.dir
-/home/sworddestiny/windows-dev/ShareWithUbuntu/clion/LogicMonitor/CMakeFiles/logic_monitor.dir
