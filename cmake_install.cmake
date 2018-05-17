@@ -1,4 +1,4 @@
-# Install script for directory: /home/sworddestiny/windows-dev/ShareWithUbuntu/clion/LogicMonitor
+# Install script for directory: /mnt/e/ShareWithUbuntu/logic_monitor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sworddestiny/windows-dev/ShareWithUbuntu/clion/LogicMonitor/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/e/ShareWithUbuntu/logic_monitor/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

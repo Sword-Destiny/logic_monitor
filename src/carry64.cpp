@@ -9,11 +9,15 @@ logic_monitor::carry64::~carry64() {
 		delete c4[i];
 		delete p4[i];
 		delete g4[i];
+		delete lp4[i];
+		delete lg4[i];
 	}
 	for (int i = 0; i < N16; i++) {
 		delete c16[i];
 		delete p16[i];
 		delete g16[i];
+        delete lp16[i];
+        delete lg16[i];
 	}
 	for (int i = 0; i < N_LC16; i++) {
 		delete lc16[i];
@@ -23,8 +27,8 @@ logic_monitor::carry64::~carry64() {
 	}
 	delete[] lc16;
 	delete[] lc64;
-	delete[] c4;delete[] p4;delete[] g4;
-	delete[] p16;delete[] g16;delete[] c16;
+	delete[] c4;delete[] p4;delete[] g4;delete[] lp4;delete[] lg4;
+	delete[] p16;delete[] g16;delete[] c16;delete[] lp16;delete[] lg16;
 	delete c64;
 	delete dp4_15c0;
 	delete p4_15c0;
