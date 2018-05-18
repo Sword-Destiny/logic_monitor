@@ -15,23 +15,23 @@ void test_carry4();
 
 void test_full_adder();
 
-void test_carry_64(int seed);
+void test_carry_64(unsigned int seed);
 
-void test_adder_64(int seed);
+void test_adder_64(unsigned int seed);
 
 int main() {
 	test_adder_64(7);
 }
 
-void test_adder_64(int seed) {
+void test_adder_64(unsigned int seed) {
 	logic_document doc("doc");
 	auto **p = new input *[64];
 	auto **g = new input *[64];
 	auto **s = new output *[64];
 
-	int i1 = (seed >> 3) % 2;
-	int i2 = (seed >> 2) % 2;
-	int i3 = (seed >> 1) % 2;
+	int i1 = (seed >> (unsigned)3) % 2;
+	int i2 = (seed >> (unsigned)2) % 2;
+	int i3 = (seed >> (unsigned)1) % 2;
 	int i4 = seed % 2;
 
 	for (int i = 0; i < 64; i++) {
@@ -81,15 +81,15 @@ void test_adder_64(int seed) {
 	delete a64;
 }
 
-void test_carry_64(int seed) {
+void test_carry_64(unsigned int seed) {
 	logic_document doc("doc");
 	auto **p = new input *[64];
 	auto **g = new input *[64];
 	auto **c = new output *[64];
 
-	int i1 = (seed >> 3) % 2;
-	int i2 = (seed >> 2) % 2;
-	int i3 = (seed >> 1) % 2;
+	int i1 = (seed >> (unsigned)3) % 2;
+	int i2 = (seed >> (unsigned)2) % 2;
+	int i3 = (seed >> (unsigned)1) % 2;
 	int i4 = seed % 2;
 
 	for (int i = 0; i < 64; i++) {
