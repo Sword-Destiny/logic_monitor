@@ -48,8 +48,8 @@ void test_full_adder() {
 			 << co.get_signal() << endl;
 	}
 	delete[] cycle_a;
-    delete[] cycle_b;
-    delete[] cycle_c;
+	delete[] cycle_b;
+	delete[] cycle_c;
 }
 ```
 ***
