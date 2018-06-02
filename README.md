@@ -47,7 +47,9 @@ void test_full_adder() {
 		cout << a.get_signal() << " " << b.get_signal() << " " << c.get_signal() << "  " << s.get_signal() << " "
 			 << co.get_signal() << endl;
 	}
-	delete[] cycle_a, cycle_b, cycle_c;
+	delete[] cycle_a;
+    delete[] cycle_b;
+    delete[] cycle_c;
 }
 ```
 ***
