@@ -15,7 +15,7 @@ void test_carry4();
 
 void test_full_adder();
 
-void test_carry_64(int seed);
+void test_carry_64(unsigned int seed);
 
 void test_adder_64(unsigned int seed);
 
