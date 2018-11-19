@@ -8,33 +8,33 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/e/ShareWithUbuntu/logic_monitor"/>
+				<Option working_dir="/mnt/d/logic_monitor"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/e/ShareWithUbuntu/logic_monitor"/>
+				<Option working_dir="/mnt/d/logic_monitor"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="logic_monitor">
-				<Option output="/mnt/e/ShareWithUbuntu/logic_monitor/logic_monitor" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/e/ShareWithUbuntu/logic_monitor"/>
+				<Option output="/mnt/d/logic_monitor/logic_monitor" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/logic_monitor"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/mnt/e/ShareWithUbuntu/logic_monitor/include"/>
+					<Add directory="/mnt/d/logic_monitor/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -45,20 +45,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 logic_monitor"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 logic_monitor"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="logic_monitor/fast">
-				<Option output="/mnt/e/ShareWithUbuntu/logic_monitor/logic_monitor" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/e/ShareWithUbuntu/logic_monitor"/>
+				<Option output="/mnt/d/logic_monitor/logic_monitor" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/logic_monitor"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/mnt/e/ShareWithUbuntu/logic_monitor/include"/>
+					<Add directory="/mnt/d/logic_monitor/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -69,141 +69,141 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 logic_monitor/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 logic_monitor/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/mnt/e/ShareWithUbuntu/logic_monitor"/>
+				<Option working_dir="/mnt/d/logic_monitor"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/e/ShareWithUbuntu/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/d/logic_monitor/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/adder64.h">
+		<Unit filename="/mnt/d/logic_monitor/include/adder64.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/and_device.h">
+		<Unit filename="/mnt/d/logic_monitor/include/and_device.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/and_not_device.h">
+		<Unit filename="/mnt/d/logic_monitor/include/and_not_device.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/and_not_device3.h">
+		<Unit filename="/mnt/d/logic_monitor/include/and_not_device3.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/and_not_device4.h">
+		<Unit filename="/mnt/d/logic_monitor/include/and_not_device4.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/carry4.h">
+		<Unit filename="/mnt/d/logic_monitor/include/carry4.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/carry64.h">
+		<Unit filename="/mnt/d/logic_monitor/include/carry64.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/clock.h">
+		<Unit filename="/mnt/d/logic_monitor/include/clock.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/common.h">
+		<Unit filename="/mnt/d/logic_monitor/include/common.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/document.h">
+		<Unit filename="/mnt/d/logic_monitor/include/document.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/full_adder.h">
+		<Unit filename="/mnt/d/logic_monitor/include/full_adder.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/iface.h">
+		<Unit filename="/mnt/d/logic_monitor/include/iface.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/logic_device.h">
+		<Unit filename="/mnt/d/logic_monitor/include/logic_device.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/no_devices.h">
+		<Unit filename="/mnt/d/logic_monitor/include/no_devices.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/not_device.h">
+		<Unit filename="/mnt/d/logic_monitor/include/not_device.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/or_device.h">
+		<Unit filename="/mnt/d/logic_monitor/include/or_device.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/or_not_device.h">
+		<Unit filename="/mnt/d/logic_monitor/include/or_not_device.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/or_not_device3.h">
+		<Unit filename="/mnt/d/logic_monitor/include/or_not_device3.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/include/or_not_device4.h">
+		<Unit filename="/mnt/d/logic_monitor/include/or_not_device4.h">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/main.cpp">
+		<Unit filename="/mnt/d/logic_monitor/main.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/adder64.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/adder64.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/and_device.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/and_device.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/and_not_device.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/and_not_device.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/and_not_device3.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/and_not_device3.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/and_not_device4.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/and_not_device4.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/carry4.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/carry4.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/carry64.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/carry64.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/clock.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/clock.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/common.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/common.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/document.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/document.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/full_adder.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/full_adder.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/iface.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/iface.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/logic_device.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/logic_device.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/no_devices.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/no_devices.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/not_device.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/not_device.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/or_device.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/or_device.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/or_not_device.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/or_not_device.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/or_not_device3.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/or_not_device3.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/src/or_not_device4.cpp">
+		<Unit filename="/mnt/d/logic_monitor/src/or_not_device4.cpp">
 			<Option target="logic_monitor"/>
 		</Unit>
-		<Unit filename="/mnt/e/ShareWithUbuntu/logic_monitor/CMakeLists.txt">
+		<Unit filename="/mnt/d/logic_monitor/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
